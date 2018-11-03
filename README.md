@@ -6,7 +6,9 @@ His repo is here [Minsk](https://github.com/terrajobst/minsk)
 
 ## Mission
 
-Learn how to compilers work and create my own.  In order to do this I need to understand the code, what we are doing and why.  I cant just copy [Immo Landwerth](https://github.com/terrajobst) code. This means that I am going to have to remove the first version of the parser I added yesterday I couldnt understand it so just ended up copying his code.  So I think I am going to take a step back to day and rewach the youtube video starting at [Episode 1: A basic expression evaluator 31:26](https://youtu.be/wgHIkdUQbp0?t=1869) until I understand what the code is doing.  Now I am going to allow myself to do things diffrently thatn Immo I think thats fair all developers are diffrent and I may have a diffrent coding style than he does.   The fun thing in the end will be finding out if my changes get me into trouble or not.
+Learn how to compilers work and create my own.  In order to do this I need to understand the code, what we are doing and why.  I cant just copy [Immo Landwerth](https://github.com/terrajobst) code. This means that I am going to have to remove the first version of the parser I added yesterday I couldnt understand it so just ended up copying his code.  So I think I am going to take a step back to day and rewach the youtube video starting at [Episode 1: A basic expression evaluator 31:26](https://youtu.be/wgHIkdUQbp0?t=1869) until I understand what the code is doing.  
+
+Now I am going to allow myself to do things diffrently thatn Immo I think thats fair all developers are diffrent and I may have a diffrent coding style than he does.   The fun thing in the end will be finding out if my changes get me into trouble or not.
 
 
 ## Noteable links
@@ -16,7 +18,7 @@ Learn how to compilers work and create my own.  In order to do this I need to un
 [Episode 1: A basic expression evaluator](https://www.youtube.com/watch?v=wgHIkdUQbp0)
 - Lexor  [Episode 1: A basic expression evaluator 16:11](https://youtu.be/wgHIkdUQbp0?t=971)
 - Parser [Episode 1: A basic expression evaluator 31:26](https://youtu.be/wgHIkdUQbp0?t=1869)
-
+- Parser diagnostics [Episode 1: A basic expression evaluator 1:00](https://youtu.be/wgHIkdUQbp0?t=3621)
 ## Notes
 
 [Episode 1: A basic expression evaluator](https://www.youtube.com/watch?v=wgHIkdUQbp0)
