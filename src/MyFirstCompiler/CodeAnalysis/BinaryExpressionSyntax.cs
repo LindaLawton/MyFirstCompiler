@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using MyFirstCompiler.CodeAnalysis;
 
-namespace MyFirstCompiler
+namespace MyFirstCompiler.CodeAnalysis
 {
     sealed class BinaryExpressionSyntax : ExpressionSyntax
     {

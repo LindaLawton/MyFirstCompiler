@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MyFirstCompiler.CodeAnalysis;
 
-namespace MyFirstCompiler
+namespace MyFirstCompiler.CodeAnalysis
 {
     sealed class SyntaxTree
     {

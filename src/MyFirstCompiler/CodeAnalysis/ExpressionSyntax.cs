@@ -1,4 +1,4 @@
-﻿namespace MyFirstCompiler
+﻿namespace MyFirstCompiler.CodeAnalysis
 {
     abstract class ExpressionSyntax : SyntaxNode
     {
