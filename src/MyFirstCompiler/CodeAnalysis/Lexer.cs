@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyFirstCompiler.CodeAnalysis
 {
-    // splits a string into words
+    // a Lexer takes a string and brakes into words.  
     class Lexer
     {
         private readonly string _text;

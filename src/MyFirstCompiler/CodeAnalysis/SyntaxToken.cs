@@ -1,11 +1,19 @@
-﻿namespace MyFirstCompiler.CodeAnalysis
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace MyFirstCompiler.CodeAnalysis
 {
-    internal class SyntaxToken : SyntaxNode
+    class SyntaxToken : SyntaxNode
     {
-        public SyntaxKind Kind { get; }
+        public override SyntaxKind Kind { get; }
         public int Position { get; }
         public string Text { get; }
         public object Value { get; }
+
+        public override IEnumerable<SyntaxNode> GetChildren()
+        {
+            return Enumerable.Empty<SyntaxNode>();
+        }
 
         public SyntaxToken(SyntaxKind kind, int position, string text, object value)
         {

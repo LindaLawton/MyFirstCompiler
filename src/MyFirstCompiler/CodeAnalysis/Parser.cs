@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace MyFirstCompiler.CodeAnalysis
 {
@@ -54,9 +52,9 @@ namespace MyFirstCompiler.CodeAnalysis
         }
         public SyntaxTree Parse()
         {
-            var expresion = ParseTerm();
+            var expression = ParseTerm();
             var endOfFileToken = Match(SyntaxKind.EndOfFileToken);
-            return new SyntaxTree(_diagnostics, expresion, endOfFileToken);
+            return new SyntaxTree(_diagnostics, expression, endOfFileToken);
         }
         private ExpressionSyntax ParseTerm()
         {
@@ -93,40 +91,6 @@ namespace MyFirstCompiler.CodeAnalysis
             }
             var numberToken = Match(SyntaxKind.NumberToken);
             return new NumberExpressionSyntax(numberToken);
-        }
-    }
-
-    sealed class ParenthesizedExpressionSyntax : ExpressionSyntax
-    {
-        public ParenthesizedExpressionSyntax(SyntaxToken openParenthesisToken, ExpressionSyntax expression, SyntaxToken closeParenthesisToken)
-        {
-            OpenParenthesisToken = openParenthesisToken;
-            Expression = expression;
-            CloseParenthesisToken = closeParenthesisToken;
-        }
-        public override SyntaxKind Kind => SyntaxKind.ParenthesizedExpression;
-        public SyntaxToken OpenParenthesisToken { get; }
-        public ExpressionSyntax Expression { get; }
-        public SyntaxToken CloseParenthesisToken { get; }
-        public override IEnumerable<SyntaxNode> GetChildren()
-        {
-            yield return OpenParenthesisToken;
-            yield return Expression;
-            yield return CloseParenthesisToken;
-        }
-    }
-    sealed class NumberExpressionSyntax : ExpressionSyntax
-    {
-        public SyntaxToken NumberToken { get; }
-        public override SyntaxKind Kind => SyntaxKind.NumberExpression;
-        public NumberExpressionSyntax(SyntaxToken numberToken)
-        {
-            NumberToken = numberToken;
-        }
-
-        public override IEnumerable<SyntaxNode> GetChildren()
-        {
-            yield return NumberToken;
         }
     }
 }
